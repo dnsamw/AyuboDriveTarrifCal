@@ -1,0 +1,93 @@
+﻿Ayubo Drive is the transport arm of Ayubo Leisure (Pvt) Ltd, an emerging travel & tour company in Sri Lanka. 
+It owns a fleet of vehicles ranging from cars, SUVs to vans. 
+
+The vehicles that it owns are hired or rented with or without a driver. 
+The tariffs are based on the vehicle type. 
+Some of the vehicle types that it operates are, 
+
+	1) small car, 
+	2) sedan car, 
+	3) SVUs, 
+	4) Jeep (WD), 
+	5) 7-seater van and 
+	6) Commuter van. 
+
+*New vehicle types are to be added in the future.
+
+Vehicle rent hire options are described below.
+
+1.	Rent (With or without driver) – For each type of vehicle rates are 
+
+	1) given per day, 
+	2) per week and 
+	3) per month. 
+
+	4) Rate for a driver also given per day. 
+
+*Depending on the rent period the total rent amount needs to be calculated. 
+
+For example: if a vehicle is rented for 10 days with a driver, total amount to be calculated as follows:
+
+Total rent = 1_week_car_rent + 1_day_rent x 3 + 1_day_driver_rent x 10
+
+2.Hire (with driver only) – These are based on packages such as 
+	
+	1) airport drop, 
+	2) airport pickup, 
+	3) 100km per day package, 
+	4) 200km per day package etc. 
+
+Standard rates are defined for a vehicle type for a package type that is applicable for that type of vehicle. 
+For each package maximum km limit and maximum number of hours are also defined. 
+Extra km rate is also defined which is applicable if they run beyond the allocated km limit for the tour. 
+For day tours if they exceed max hour limit, a waiting charge is applicable for extra hours. 
+Driver overnight rate and vehicle night park rate also defined which is applicable for each night when the vehicle is hired for 2 or more days.
+
+
+Task 3: Implement basic algorithms in code using an IDE (LO3). 
+
+3.1	Design suable algorithms for vehicle tariff calculation for rents and hires (P3). 
+
+Ideally 3 functions should be developed for this purpose as follows:
+
+
+
+Function 1: Rent calculation.
+=============================
+Return the total rent_value when 
+	
+	1) rented_date, 
+	2) return_date, 
+	3) with_driver parameters are sent in. 
+	with_driver parameter is set to true or false depending whether the vehicle is rented with or without driver.
+
+Function 2: Day tour - hire calculation.
+========================================
+Calculate total hire_value when 
+	1) start_time, 
+	2) end_time, 
+	3) start_km_reading, 
+	4) end_km_reading parameters are sent in. 
+
+	Should return 
+		1) base_hire_charge, 
+		3) waiting_charge and 
+		4) extra_km_charge as output paramters.
+
+
+Function 3: Long tour - hire calculation.
+=========================================
+Calculate total hire_value when 
+	1) start_date, 
+	2) end_date, 
+	3) start_km_reading, 
+	4) end_km_reading parameters are sent in. 
+
+	Should return 
+		1) base_hire_charge, 
+		2) overnight_stay_charge and 
+		3) extra_km_charge as output parameters.
+
+3.2	Implement the above algorithms using visual studio IDE (using C#.net) and design the suitable database structure for keeping the tariffs for vehicle types and different packages which must be used for implementing the above functions (M3). 
+
+
