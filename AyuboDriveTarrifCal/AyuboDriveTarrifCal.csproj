@@ -34,6 +34,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -54,6 +55,34 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="userControls\UC_CompletedTrips.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="userControls\UC_CompletedTrips.Designer.cs">
+      <DependentUpon>UC_CompletedTrips.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userControls\UC_HireRent.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="userControls\UC_HireRent.Designer.cs">
+      <DependentUpon>UC_HireRent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userControls\UC_Manage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="userControls\UC_Manage.Designer.cs">
+      <DependentUpon>UC_Manage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userControls\UC_TarrifCal.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="userControls\UC_TarrifCal.Designer.cs">
+      <DependentUpon>UC_TarrifCal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vehicle.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -63,6 +92,18 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="userControls\UC_CompletedTrips.resx">
+      <DependentUpon>UC_CompletedTrips.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userControls\UC_HireRent.resx">
+      <DependentUpon>UC_HireRent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userControls\UC_Manage.resx">
+      <DependentUpon>UC_Manage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userControls\UC_TarrifCal.resx">
+      <DependentUpon>UC_TarrifCal.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -74,7 +115,12 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ProjectRequirements.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
